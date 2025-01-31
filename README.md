@@ -99,4 +99,36 @@ if *.json chages:
 else:
     Use from cache
 ```
+## View all docker images.
+docker images
 
+## removing all dangling images
+docker image prune
+
+## View all container images.
+docker ps
+
+## Removing unused conatainer
+docker container prune
+
+## Remove wth specific id
+docker image rm _id_
+
+## Tagging an image when building.
+docker built -t image_name:tag
+
+## Removing image tag.
+docker image remove image_name:tag
+
+## Tagging an image after building.
+docker image tag _id_ image_name:tag
+
+
+## Tagging user_name before pushing to dockerhub
+docker image tag image_name:tag user_name/react-app:tag
+
+## Pushing to dockerhub
+docker push user_name/react-app:tag
+
+## Pulling
+docker pull
