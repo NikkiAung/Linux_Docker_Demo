@@ -121,8 +121,7 @@ docker built -t image_name:tag
 docker image remove image_name:tag
 
 ## Tagging an image after building.
-docker image tag _id_ image_name:tag
-
+docker image tag _latest_id_ image_name:tag
 
 ## Tagging user_name before pushing to dockerhub
 docker image tag image_name:tag user_name/react-app:tag
