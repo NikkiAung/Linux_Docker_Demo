@@ -154,3 +154,16 @@ docker run -d -p 5000:8080 image
 
 ## Wanna add name
 docker run -d -p 5000:8080 --name container_name image
+
+## Executing cmd to existing running container
+docker exec container_id or container_name
+
+## Can also try this
+docker exec -it container_id or container_name sh
+
+## Manually start/stop container
+docker start container_id or container_name 
+docker stop container_id or container_name
+
+## Removing container ( force )
+docker rm -f container_id or container_name
