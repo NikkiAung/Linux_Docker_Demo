@@ -167,3 +167,9 @@ docker stop container_id or container_name
 
 ## Removing container ( force )
 docker rm -f container_id or container_name
+
+## To build simliar file inside docker container
+docker run -d -v shared_data:/app/data app_name
+
+## To inspect the data
+docker inspect shared_data
