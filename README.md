@@ -131,3 +131,15 @@ docker push user_name/react-app:tag
 
 ## Pulling
 docker pull
+
+## Run in Background
+docker run -d image
+
+## Naming containers
+docker run -d --name container_name image
+
+## Logging
+docker logs container_id
+
+## Logging ( watch mode )
+docker logs -f container_id
