@@ -173,3 +173,6 @@ docker run -d -v shared_data:/app/data app_name
 
 ## To inspect the data
 docker inspect shared_data
+
+## Binding Host & Container
+docker run -p host_port:container_port -v ${PWD}:/app -v /app/node_modules -e CHOKIDAR_USEPOLLING=true image_name
