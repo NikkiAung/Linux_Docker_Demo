@@ -143,3 +143,14 @@ docker logs container_id
 
 ## Logging ( watch mode )
 docker logs -f container_id
+
+# Publishing PORT
+
+## In dockerFile
+EXPOSE ur_port
+
+## Redirecting port to our host
+docker run -d -p 5000:8080 image
+
+## Wanna add name
+docker run -d -p 5000:8080 --name container_name image
